@@ -24,7 +24,7 @@ const original = document.getElementById("orig");
 
 playButton.addEventListener("click", function() {
     c.play();
-	volumeDisplay.textContent = volumeSlider.value + "%";
+	volumeDisplay.textContent = c.volume * 100 + "%";
 	console.log("Play video")
 });
 
